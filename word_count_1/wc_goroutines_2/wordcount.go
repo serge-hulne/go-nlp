@@ -34,9 +34,9 @@ func cutSet_func(rune int) bool {
 	return rune < 256 && cutSet_map[rune]
 }
 
-func countWords(line *string) {
+func countWords(line string) {
 	cnt := 0
-	for _, word := range strings.Split(*line, " ", -1) {
+	for _, word := range strings.Split(line, " ", -1) {
 		if strings.TrimFunc(word, cutSet_func) != "" {
 			cnt++
 		}
@@ -96,7 +96,7 @@ func main() {
 		line, err = fileReader.ReadString('\n')
 		if len(line) > 0 && line != "\n" {
 			waitGrp.Add(1)
-			go countWords(&line)
+			go countWords(line)
 		}
 	}
 
