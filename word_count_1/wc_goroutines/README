@@ -1,0 +1,2 @@
+The original version of wordcount.go with goroutines by Vladimir Sibirov (from the gloang-nuts post entitled: "Lazy parallelism benchmark ").
+ 
