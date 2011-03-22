@@ -1,0 +1,5 @@
+C++ version of wc7 (ngrams frequency counter).
+
+Use QT4 (for the C++ QHash Hasmaps).
+
+
